@@ -1,0 +1,92 @@
+.similar-posts {
+  margin-bottom: 75px;
+  &__title {
+    margin-bottom: 40px;
+    font-family: 'Consolas', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+
+  }
+}
+
+.posts {
+  width: 100%;
+  overflow: visible;
+  overflow-x: clip;
+
+  &__image {
+    display: block;
+    margin-bottom: 20px;
+    max-height: 226px;
+    transition: transform 0.15s ease-in-out;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.03);
+      transition: transform 0.15s ease-in-out;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font-family: 'Consolas', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #272522;
+
+    &:hover {
+      color: #0035FF;
+      transition: color 0.15s ease-in-out;
+    }
+  }
+
+  &__pagination {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .similar-posts {
+    margin-bottom: 65px;
+    &__title {
+      margin-bottom: 25px;
+      font-size: 23px;
+      line-height: 28px;
+    }
+  }
+
+  .posts {
+    &__image {
+      margin-bottom: 13px;
+      max-height: unset;
+    }
+    &__link {
+      width: 84%;
+    }
+    &__pagination {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+    }
+  }
+  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -20px;
+  }
+  .post-img {
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-pagination-bullet-active {
+    transform: scale(1.5);
+    transition: transform 0.15s ease-in-out;
+  }
+}

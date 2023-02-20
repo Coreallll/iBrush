@@ -416,8 +416,8 @@ figure {
   display: block;
   width: 25px;
   height: 25px;
-  fill: #FFB400;
-  stroke: #FFB400;
+  fill: inherit;
+  stroke: inherit;
   -webkit-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
@@ -436,6 +436,8 @@ figure {
 
 .rating-label {
   margin-right: 10px;
+  fill: #FFB400;
+  stroke: #FFB400;
   cursor: pointer;
 }
 
@@ -469,11 +471,12 @@ figure {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.comments__item {
+
+.label {
   position: relative;
   display: block;
 }
-.comments__item:not(:last-child) {
+.label:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -771,11 +774,16 @@ figure {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .comments__item {
+
+  .label {
     margin-bottom: 10px;
   }
-  .comments__item:not(:last-child) {
+  .label:not(:last-child) {
     margin-right: 0;
+  }
+
+  .error {
+    top: -8px;
   }
 
   .choices {

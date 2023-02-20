@@ -1,0 +1,43 @@
+.advertisement {
+  margin-bottom: 38px;
+  padding-top: 34px;
+  padding-bottom: 36px;
+  max-width: 100%;
+  background-color: #EDEDED;
+
+  &__dscr {
+    display: block;
+    margin-bottom: 17px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__link {
+    text-decoration: underline;
+    &:hover {
+      color: #001b7c;
+      transition: color 0.15s ease-in-out;
+    }
+  }
+
+  &__cont {
+    padding-left: 64px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advertisement {
+    margin-bottom: 23px;
+    padding-top: 25px;
+    padding-bottom: 16px;
+
+    &__cont {
+      padding-left: 0;
+    }
+
+    &__dscr {
+      margin-bottom: 10px;
+    }
+  }
+}

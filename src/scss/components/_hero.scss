@@ -1,0 +1,107 @@
+.hero {
+  margin-bottom: 55px;
+  padding-top: 87px;
+
+  &__title {
+    padding: 0 30px;
+    font-family: 'Consolas', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    background-color: #FFFFFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    color: #0062FF;
+    z-index: 10;
+  }
+
+  &__banner {
+    border-bottom: 0.5px solid #DCDCDC;
+  }
+}
+
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 69px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    border-top: 0.5px solid #DBDBDB;
+  }
+}
+
+.img-books-1 {
+  margin-bottom: 16px;
+}
+
+.img-descr {
+  margin-bottom: 50px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: italic;
+  color: #202326;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    margin-bottom: 25px;
+    padding-top: 40px;
+
+    &__title {
+      padding: 0 15px;
+      font-size: 23px;
+      line-height: 25px;
+    }
+
+    &__banner {
+      display: flex;
+      flex-direction: column-reverse;
+      border-bottom: none;
+    }
+    .title {
+      margin-bottom: 40px;
+    }
+
+    .img-descr {
+      margin-bottom: 26px;
+    }
+
+    .img-books-1 {
+      max-width: unset;
+    }
+
+    .scroll-img {
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+
+    .scroll-img {
+      scrollbar-width: thin;
+      scrollbar-color: #0062FF #f9f9fd;
+      &::-webkit-scrollbar {
+        height: 5px;
+        background-color: #f9f9fd;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #0062FF;
+      }
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #E6E6E6;
+        box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+      }
+    }
+
+  }
+
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iBrush</title>
+  <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+  <link rel="preload" href="./resources/fonts/Consolas-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/vendor.js"></script>
+  <script defer src="./js/scripts.js"></script>
+</head>
+<body class="page__body">
+  <main class="main">
+    <div class="site-container">
+      <div class="content">
+      @include('partials/hero.html')
+      @include('partials/quote.html')
+      @include('partials/advertisement.html')
+      @include('partials/ending.html')
+      @include('partials/feedback.html')
+      @include('partials/posts.html')
+      </div>
+    </div>
+  </main>
+</body>
+</html>

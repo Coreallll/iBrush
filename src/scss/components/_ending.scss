@@ -1,0 +1,33 @@
+.ending {
+  margin-bottom: 74px;
+  &__title {
+    margin-bottom: 29px;
+    font-family: "Consolas", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+  &__description {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ending {
+    margin-bottom: 30px;
+
+    &__title {
+      margin-bottom: 24px;
+      font-size: 21px;
+      line-height: 36px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
