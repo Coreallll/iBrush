@@ -67,16 +67,19 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-  }  
+  }
+}
+
+.input-field {
+  margin-right: 30px;
+  width: 100%;
+  max-width: 226px;
+  max-height: 50px;
 }
 
 .label {
   position: relative;
   display: block;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
 .input {
@@ -139,6 +142,7 @@
   margin-bottom: 15px;
   min-height: 120px;
   max-height: none;
+  resize: none;
 }
 
 .choices {
@@ -147,7 +151,7 @@
 
   &__inner {
     display: inline-block;
-    padding: 15px 25px 15px 15px;
+    padding: 15px 35px 15px 15px;
     vertical-align: center;
     min-height: 50px;
     background-color: #FFFFFF;
@@ -157,6 +161,10 @@
   }
 
   &__item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
     &--choice {
       &::before {
         content: '';
@@ -176,11 +184,6 @@
   }
 }
 
-.choices__list--single .choices__item {
-  font-size: 14px;
-  line-height: 14px;
-}
-
 .choices[data-type*=select-one]:after {
   top: 48%;
   right: 22px;
@@ -198,10 +201,6 @@
   top: 45%;
   border-color: #000000;
   transform: rotate(225deg);
-}
-
-.choices[data-type*=select-one] .choices__inner {
-  padding-bottom: 15px;
 }
 
 .is-open .choices__inner {
@@ -228,7 +227,7 @@
 }
 
 .choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
-  padding: 15px 25px;
+  padding: 15px;
 }
 
 .choices__item--choice.is-highlighted {
@@ -314,8 +313,12 @@
     }
   }
 
-  .label {
+  .input-field {
     margin-bottom: 10px;
+    max-width: unset;
+  }
+
+  .label {
 
     &:not(:last-child) {
       margin-right: 0;

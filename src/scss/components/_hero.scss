@@ -1,6 +1,6 @@
 .hero {
   margin-bottom: 55px;
-  padding-top: 87px;
+  padding-top: 76px;
 
   &__title {
     padding: 0 30px;
@@ -16,7 +16,42 @@
   }
 
   &__banner {
+    position: relative;
     border-bottom: 0.5px solid #DCDCDC;
+  }
+}
+
+.date {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  padding: 24px 29px;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  line-height: 25px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #1A1A1A;
+  z-index: 10;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &__number {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+
+    &:after {
+      content: '';
+      top: 46%;
+      right: 0;
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background-image: url("../img/triangle.svg");
+    }
   }
 }
 
@@ -26,6 +61,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 69px;
+
   &:before {
     content: '';
     position: absolute;
@@ -37,8 +73,19 @@
   }
 }
 
-.img-books-1 {
+.scroll-img {
+  position: relative;
   margin-bottom: 16px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 80px;
+    width: 12px;
+    height: 9px;
+    background-image: url("../img/triangle-white.svg");
+  }
 }
 
 .img-descr {
@@ -66,6 +113,7 @@
       flex-direction: column-reverse;
       border-bottom: none;
     }
+
     .title {
       margin-bottom: 40px;
     }
@@ -86,21 +134,27 @@
     .scroll-img {
       scrollbar-width: thin;
       scrollbar-color: #0062FF #f9f9fd;
+
       &::-webkit-scrollbar {
         height: 5px;
         background-color: #f9f9fd;
       }
+
       &::-webkit-scrollbar-thumb {
         border-radius: 10px;
         background-color: #0062FF;
       }
+
       &::-webkit-scrollbar-track {
         border-radius: 10px;
         background-color: #E6E6E6;
         box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
       }
     }
+  }
 
+  .date {
+    display: none;
   }
 
 }
