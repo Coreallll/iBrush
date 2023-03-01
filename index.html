@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,171 +13,178 @@
   <script defer src="./js/vendor.js"></script>
   <script defer src="./js/scripts.js"></script>
 </head>
+
 <body class="page__body">
   <main class="main">
     <div class="site-container">
       <div class="content">
-      <section class="hero">
-  <div class="container hero__container">
-    <div class="title">
-      <h1 class="hero__title">Путь JavaScript</h1>
-    </div>
-    <figure class="hero__banner">
-      <a href="/" class="date">
-        <span class="date__number">12</span>
-        <span class="date__month">Апреля</span>
-      </a>
-      <div class="scroll-img">
-        <img class="img-books-1" src="./img/books-1.jpg" alt="">
-      </div>
-      <figcaption class="img-descr">Можно выделить три основных направления для прогресса JavaScript</figcaption>
-    </figure>
-  </div>
-</section>
-      <section class="quote">
-  <div class="container">
-    <h2 class="quote__title">Серверный JavaScript</h2>
-    <p class="quote__description">
-      Разработчики и&nbsp;клиенты часто неправильно понимают, что такое система. Они видят графический интерфейс
-      и&nbsp;думают, что он&nbsp;и&nbsp;есть система. Они определяют систему в&nbsp;терминах графического интерфейса
-      и&nbsp;считают, что должны сразу начать работу с&nbsp;графическим интерфейсом. Они не&nbsp;понимают важнейшего
-      принципа: ввод/вывод не&nbsp;важен.
-      <span class="quote__author">— Р. Мартин</span>
-    </p>
-  </div>
-</section>
-      <section class="advertisement">
-  <div class="container">
-    <div class="advertisement__cont">
-      <span class="advertisement__dscr">Реклама на <a class="advertisement__link" href="">blabla.com</a></span>
-      <picture>
-        <source srcset="./img/books-2-sm.jpg" media="(max-width: 767px)">
-        <!--        <source srcset="./img/books-2.jpg" media="(min-width: 321px)">-->
-        <img srcset="./img/books-2.jpg" alt="Книги">
-      </picture>
-    </div>
-  </div>
-</section>
-      <section class="ending">
-  <div class="container">
-    <h2 class="ending__title">Заключение</h2>
-    <p class="ending__description">
-      Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект.
-      Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на&nbsp;то, что все эти
-      характерологические черты отсылают не&nbsp;к&nbsp;единому образу нарратора, интегрирует мифопоэтический хронотоп.
-      Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.
-    </p>
-  </div>
-</section>
-      <section class="feedback">
-  <div class="container">
-    <div class="rating">
-      <h3 class="rating__title">Оцените статью</h3>
-      <div class="rating-group">
-        <input class="rating-input" name="rating-star" value="0" type="radio" disabled checked>
-        <label for="rating-star-1" class="rating-label">
-          <svg viewbox="0 0 25 25" class="star">
-            <use xlink:href="./img/sprite.svg#star">
-            </use>
-          </svg>
-        </label>
-        <input class="rating-input" name="rating-star" id="rating-star-1" value="1" type="radio">
-        <label for="rating-star-2" class="rating-label">
-          <svg viewbox="0 0 25 25" class="star">
-            <use xlink:href="./img/sprite.svg#star">
-            </use>
-          </svg>
-        </label>
-        <input class="rating-input" name="rating-star" id="rating-star-2" value="2" type="radio">
-        <label for="rating-star-3" class="rating-label">
-          <svg viewbox="0 0 25 25" class="star">
-            <use xlink:href="./img/sprite.svg#star">
-            </use>
-          </svg>
-        </label>
-        <input class="rating-input" name="rating-star" id="rating-star-3" value="3" type="radio">
-        <label for="rating-star-4" class="rating-label">
-          <svg viewbox="0 0 25 25" class="star">
-            <use xlink:href="./img/sprite.svg#star">
-            </use>
-          </svg>
-        </label>
-        <input class="rating-input" name="rating-star" id="rating-star-4" value="4" type="radio">
-        <label for="rating-star-5" class="rating-label">
-          <svg viewbox="0 0 25 25" class="star">
-            <use xlink:href="./img/sprite.svg#star">
-            </use>
-          </svg>
-        </label>
-        <input class="rating-input" name="rating-star" id="rating-star-5" value="5" type="radio">
-      </div>
-    </div>
-    <form action="/" class="form comments">
-      <h3 class="comments__title">Добавить комментарий к&nbsp;книге</h3>
-      <div class="comments__inputs">
-        <div class="input-field">
-          <label class="label">
-            <input class="input-reset input input-anim input-name" type="text" name="name" placeholder=" ">
-            <span class="label-name">Имя</span>
-          </label>
-          <span class="error error-name"></span>
-        </div>
-        <div class="input-field">
-          <label class="label">
-            <input class="input-reset input input-anim input-email" type="email" name="email" placeholder=" ">
-            <span class="label-name">E-mail</span>
-          </label>
-          <span class="error error-email"></span>
-        </div>
-        <select name="books" id="book-select">
-          <option selected disabled>Выберите книгу</option>
-          <option value="javascript-ninja">JavaScript ниндзя</option>
-          <option value="pragmatic-guide">Pragmatic Guide to&nbsp;JavaScript</option>
-          <option value="javascript-techniques">Pro JavaScript Techniques</option>
-          <option value="expression-javascript">Выразительный JavaScript</option>
-        </select>
-      </div>
-      <textarea class="input-reset input input-feedback" name="text" placeholder="Ваш отзыв"></textarea>
-      <button type="submit" class="btn-reset btn-form">ОТПРАВИТЬ</button>
-    </form>
-  </div>
-</section>
-      <section class="similar-posts">
-  <div class="container">
-    <h2 class="similar-posts__title">Похожие посты</h2>
-    <div class="swiper posts">
-      <div class="swiper-wrapper posts__wrapper">
-        <div class="swiper-slide posts__slide">
-          <a class="posts__image" href=""><img class="post-img" src="./img/react.jpg" alt=""></a>
-          <a class="posts__link" href="">События жизненного цикла ReactJS</a>
-        </div>
-        <div class="swiper-slide posts__slide">
-          <a class="posts__image" href=""><img class="post-img" src="./img/css.jpg" alt=""></a>
-          <a class="posts__link" href="">CSS Grids. Полное руководство</a>
-        </div>
-        <div class="swiper-slide posts__slide">
-          <a class="posts__image" href=""><img class="post-img" src="./img/js.jpg" alt=""></a>
-          <a class="posts__link" href="">Асинхронность в JavaScript</a>
-        </div>
-        <div class="swiper-slide posts__slide">
-          <a class="posts__image" href=""><img class="post-img" src="./img/react.jpg" alt=""></a>
-          <a class="posts__link" href="">События жизненного цикла ReactJS</a>
-        </div>
-        <div class="swiper-slide posts__slide">
-          <a class="posts__image" href=""><img class="post-img" src="./img/css.jpg" alt=""></a>
-          <a class="posts__link" href="">CSS Grids. Полное руководство</a>
-        </div>
-        <div class="swiper-slide posts__slide">
-          <a class="posts__image" href=""><img class="post-img" src="./img/js.jpg" alt=""></a>
-          <a class="posts__link" href="">Асинхронность в JavaScript</a>
-        </div>
-      </div>
-      <div class="swiper-pagination posts__pagination"></div>
-    </div>
-  </div>
-</section>
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="title">
+              <h1 class="hero__title">Путь JavaScript</h1>
+            </div>
+            <figure class="hero__banner">
+              <a href="/" class="date">
+                <span class="date__number">12</span>
+                <span class="date__month">Апреля</span>
+              </a>
+              <div class="scroll-img">
+                <img class="img-books-1" src="./img/books-1.jpg" alt="">
+              </div>
+              <figcaption class="img-descr">Можно выделить три основных направления для прогресса JavaScript
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <section class="quote">
+          <div class="container">
+            <h2 class="quote__title">Серверный JavaScript</h2>
+            <p class="quote__description">
+              Разработчики и&nbsp;клиенты часто неправильно понимают, что такое система. Они видят графический интерфейс
+              и&nbsp;думают, что он&nbsp;и&nbsp;есть система. Они определяют систему в&nbsp;терминах графического
+              интерфейса
+              и&nbsp;считают, что должны сразу начать работу с&nbsp;графическим интерфейсом. Они не&nbsp;понимают
+              важнейшего
+              принципа: ввод/вывод не&nbsp;важен.
+              <span class="quote__author">— Р. Мартин</span>
+            </p>
+          </div>
+        </section>
+        <section class="advertisement">
+          <div class="container">
+            <div class="advertisement__cont">
+              <span class="advertisement__dscr">Реклама на <a class="advertisement__link" href="">blabla.com</a></span>
+              <picture>
+                <source srcset="./img/books-2-sm.jpg" media="(max-width: 767px)">
+                <!--        <source srcset="./img/books-2.jpg" media="(min-width: 321px)">-->
+                <img srcset="./img/books-2.jpg" alt="Книги">
+              </picture>
+            </div>
+          </div>
+        </section>
+        <section class="ending">
+          <div class="container">
+            <h2 class="ending__title">Заключение</h2>
+            <p class="ending__description">
+              Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект.
+              Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на&nbsp;то, что
+              все эти
+              характерологические черты отсылают не&nbsp;к&nbsp;единому образу нарратора, интегрирует мифопоэтический
+              хронотоп.
+              Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.
+            </p>
+          </div>
+        </section>
+        <section class="feedback">
+          <div class="container">
+            <div class="rating">
+              <h3 class="rating__title">Оцените статью</h3>
+              <div class="rating-group">
+                <input class="rating-input" name="rating-star" value="0" type="radio" disabled checked>
+                <label for="rating-star-1" class="rating-label">
+                  <svg viewbox="0 0 25 25" class="star">
+                    <use xlink:href="./img/sprite.svg#star">
+                    </use>
+                  </svg>
+                </label>
+                <input class="rating-input" name="rating-star" id="rating-star-1" value="1" type="radio">
+                <label for="rating-star-2" class="rating-label">
+                  <svg viewbox="0 0 25 25" class="star">
+                    <use xlink:href="./img/sprite.svg#star">
+                    </use>
+                  </svg>
+                </label>
+                <input class="rating-input" name="rating-star" id="rating-star-2" value="2" type="radio">
+                <label for="rating-star-3" class="rating-label">
+                  <svg viewbox="0 0 25 25" class="star">
+                    <use xlink:href="./img/sprite.svg#star">
+                    </use>
+                  </svg>
+                </label>
+                <input class="rating-input" name="rating-star" id="rating-star-3" value="3" type="radio">
+                <label for="rating-star-4" class="rating-label">
+                  <svg viewbox="0 0 25 25" class="star">
+                    <use xlink:href="./img/sprite.svg#star">
+                    </use>
+                  </svg>
+                </label>
+                <input class="rating-input" name="rating-star" id="rating-star-4" value="4" type="radio">
+                <label for="rating-star-5" class="rating-label">
+                  <svg viewbox="0 0 25 25" class="star">
+                    <use xlink:href="./img/sprite.svg#star">
+                    </use>
+                  </svg>
+                </label>
+                <input class="rating-input" name="rating-star" id="rating-star-5" value="5" type="radio">
+              </div>
+            </div>
+            <form action="/" class="form comments">
+              <h3 class="comments__title">Добавить комментарий к&nbsp;книге</h3>
+              <div class="comments__inputs">
+                <div class="input-field">
+                  <label class="label">
+                    <input class="input-reset input input-anim input-name" type="text" name="name" placeholder=" ">
+                    <span class="label-name">Имя</span>
+                  </label>
+                  <span class="error error-name"></span>
+                </div>
+                <div class="input-field">
+                  <label class="label">
+                    <input class="input-reset input input-anim input-email" type="email" name="email" placeholder=" ">
+                    <span class="label-name">E-mail</span>
+                  </label>
+                  <span class="error error-email"></span>
+                </div>
+                <select name="books" id="book-select">
+                  <option selected disabled>Выберите книгу</option>
+                  <option value="javascript-ninja">JavaScript ниндзя</option>
+                  <option value="pragmatic-guide">Pragmatic Guide to&nbsp;JavaScript</option>
+                  <option value="javascript-techniques">Pro JavaScript Techniques</option>
+                  <option value="expression-javascript">Выразительный JavaScript</option>
+                </select>
+              </div>
+              <textarea class="input-reset input input-feedback" name="text" placeholder="Ваш отзыв"></textarea>
+              <button type="submit" class="btn-reset btn-form">ОТПРАВИТЬ</button>
+            </form>
+          </div>
+        </section>
+        <section class="similar-posts">
+          <div class="container">
+            <h2 class="similar-posts__title">Похожие посты</h2>
+            <div class="swiper posts">
+              <div class="swiper-wrapper posts__wrapper">
+                <div class="swiper-slide posts__slide">
+                  <a class="posts__image" href=""><img class="post-img" src="./img/react.jpg" alt=""></a>
+                  <a class="posts__link" href="">События жизненного цикла ReactJS</a>
+                </div>
+                <div class="swiper-slide posts__slide">
+                  <a class="posts__image" href=""><img class="post-img" src="./img/css.jpg" alt=""></a>
+                  <a class="posts__link" href="">CSS Grids. Полное руководство</a>
+                </div>
+                <div class="swiper-slide posts__slide">
+                  <a class="posts__image" href=""><img class="post-img" src="./img/js.jpg" alt=""></a>
+                  <a class="posts__link" href="">Асинхронность в JavaScript</a>
+                </div>
+                <div class="swiper-slide posts__slide">
+                  <a class="posts__image" href=""><img class="post-img" src="./img/react.jpg" alt=""></a>
+                  <a class="posts__link" href="">События жизненного цикла ReactJS</a>
+                </div>
+                <div class="swiper-slide posts__slide">
+                  <a class="posts__image" href=""><img class="post-img" src="./img/css.jpg" alt=""></a>
+                  <a class="posts__link" href="">CSS Grids. Полное руководство</a>
+                </div>
+                <div class="swiper-slide posts__slide">
+                  <a class="posts__image" href=""><img class="post-img" src="./img/js.jpg" alt=""></a>
+                  <a class="posts__link" href="">Асинхронность в JavaScript</a>
+                </div>
+              </div>
+              <div class="swiper-pagination posts__pagination"></div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </main>
 </body>
+
 </html>
